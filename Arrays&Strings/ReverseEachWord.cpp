@@ -7,12 +7,13 @@ void reverseWord(char *s)
 {
     char *word = s;
     char *temp = s;
-    while(*temp)
+    while(1)
     {
         temp++;
         if(*temp == '\0')
         {
             reverse(word,temp-1);
+            break;
         }
         else if(*temp == ' ')
         {
